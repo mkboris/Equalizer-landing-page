@@ -24,7 +24,6 @@ Users should be able to:
 
 ### Screenshot
 ![](/design/Screenshot.jpeg)
-![](/design/Screenshot-mobile.jpeg)
 ### Links
 
 - Solution URL: https://github.com/mkboris/Equalizer-landing-page
