@@ -1,0 +1,455 @@
+:root {
+    --ios-btn-hover: hsl(177, 68%, 64%);
+    --ios-btn-idle: hsl(244, 23%, 12%);
+    --andriod-btn-hover: hsl(33, 100%, 70%);
+    --andriod-btn-idle: hsl(20, 33%, 98%);
+    --center-bg-clr: hsl(12, 94%, 65%);
+}
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+} 
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    min-height: 100vh;  
+    text-align: center;
+    background-color: var(--andriod-btn-idle);
+    overflow-x: hidden;
+}
+
+/* MOBILE VERSION */
+
+header {
+    width: 375px;
+    padding: 2.5em 1.5em;
+    margin: auto;
+    height: 100px;
+}
+header .logo {
+    display: flex;
+    justify-content: flex-start;
+}
+.bg-main {
+    width: 281px;
+    height: 480px;
+    background-image: url(assets/bg-main-mobile.png);
+    margin-top: 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -187px;
+    right: 0;
+    bottom: 0;
+    left: 130px;
+}
+.intro-section {
+    width: 327px;
+    height: 320px;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 12em;
+}
+.main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.45px;
+    margin-bottom: 30px;
+}
+.main-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.center-section {
+    width: 375px;
+    height: 969px;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.bg-pattern-2 {
+    background-color: var(--ios-btn-idle);
+    width: 375px;
+    height: 600px;
+    border-radius: 0.5em;
+}
+.center-info-container {
+    background-color: var(--center-bg-clr);
+    width: 375px;
+    height: 546px;
+    position: relative;
+    bottom: 476px;
+    border-radius: 0.5em;
+    text-align: left;
+    padding: 2em;
+}
+.center-heading {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: var(--andriod-btn-idle);
+}
+.center-paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--andriod-btn-idle);
+    margin-bottom: 0;
+}
+.subscription {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 65px;
+    color: var(--andriod-btn-idle);
+    margin-top: 0.3em;
+    margin-bottom: 0.4em;
+}
+.month {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--andriod-btn-idle);
+    letter-spacing: -0.2px;
+    position: relative;
+    bottom: 0.7em;
+}
+.ios-button {
+    width: 296px;
+    height: 61px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    border-radius: 0.5em;
+    border-style: none;
+    cursor: pointer;
+    background-color: var(--ios-btn-idle);
+    color: var(--andriod-btn-idle);
+}
+.ios-button:hover {
+    background-color: var(--ios-btn-hover);
+}
+.andriod-button {
+    width: 296px;
+    height: 61px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    border-radius: 0.5em;
+    border-style: none;
+    cursor: pointer;
+    background-color: var(--andriod-btn-idle);
+    color: var(--ios-btn-idle);
+    margin-top: 1em;
+}
+.andriod-button:hover {
+    background-color: var(--andriod-btn-hover);
+}
+.icon-apple, .icon-android {
+    position: relative;
+    top: 0.1em;
+    right: 0.2em;
+}
+.bg-pattern-2 img {
+    width: 280px;
+    height: 420px;
+}
+.mobile-app img {
+    width: 208.97px;
+    height: 430px;
+    position: relative;
+    bottom: 520px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    text-align: left;
+    margin: auto;
+    padding: 1.5em;
+}
+.footer-logo {
+    width: 146.09px;
+    height: 32px;
+}
+.footer-paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--ios-btn-idle);
+    margin-top: 0;
+    margin-bottom: 3em;
+}
+.copyright {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--ios-btn-idle);
+    margin-bottom: 0;
+    margin-top: 2em;
+}
+.email {
+    font-weight: 700;
+}
+.social-icons {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 3em;
+    cursor: pointer;
+}
+.social-icons img:hover {
+    background-color: var(--andriod-btn-hover);
+}
+
+/* TABLET VERSION */
+
+@media (min-width: 768px) {
+    header {
+        width: 768px;
+        padding: 2.5em 1.5em;
+        margin: auto;
+        height: 100px;
+    }
+    .bg-main {
+        width: 983px;
+        height: 808px;
+        background-image: url(assets/bg-main-tablet.png);
+        margin-top: 0;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        top: -231px;
+        right: 0;
+        bottom: 0;
+        left: -178px;
+    }
+    .bg-pattern-1 {
+        background-image: url(assets/bg-pattern-1.svg);
+        width: 266.67px;
+        height: 400px;
+        margin-top: 0;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        top: -918px;
+        right: 0;
+        z-index: 1;
+        bottom: 0;
+        left: 510px;
+    }
+    .intro-section {
+        width: 520px;
+        height: 332px;
+        margin: auto;
+        text-align: left;
+        margin-bottom: 18em;
+        margin-left: 2em;
+    }
+    header .logo {
+        padding-left: 0.4em;
+    }
+    .main-heading {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.73px;
+        margin-bottom: 30px;
+    }
+    .main-paragraph {
+        font-size: 18px;
+        line-height: 28px;
+        padding-right: 0.5em;
+    }
+    main {
+        width: 768px;
+        max-width: 800px;
+    }
+    .center-section {
+        width: 696px;
+        height: 738px;
+        display: flex;
+        flex-direction: column;
+    }
+    .bg-pattern-2 {
+        background-color: var(--ios-btn-idle);
+        width: 696px;
+        height: 600px;
+        border-radius: 0.5em;
+        position: absolute;
+    }
+    .center-info-container {
+        width: 399px;
+        height: 546px;
+        position: relative;
+        bottom: 412px;
+        padding: 3em;
+        left: 231px;
+        padding-top: 1em;
+    }
+    .mobile-app img {
+        width: 270.21px;
+        height: 556px;
+        bottom: 144px;
+        right: 156px;
+    }
+    footer {
+        padding: 1.5em;
+        width: 696px;
+        height: 143px;
+        padding-right: 18em;
+        padding-left: 0;
+        margin-bottom: 6em;
+    }
+    .social-icons {
+        justify-content: flex-end;
+        position: relative;
+        left: 289px;
+        bottom: 102px;
+    }
+    .footer-paragraph {
+        padding-right: 1em;
+    }
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) {
+    main {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        padding: 2.5em 1.5em;
+        margin: auto;
+        height: 100px;
+    }
+    .logo-img {
+        padding-left: 5.1em;
+    }
+    .bg-main {
+        width: 983px;
+        height: 808px;
+        background-image: url(assets/bg-main-desktop.png);
+        margin-top: 0;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        top: -72px;
+        right: 0;
+        bottom: 0;
+        left: 182px;
+    }
+    .bg-pattern-1 {
+        background-image: url(assets/bg-pattern-1.svg);
+        width: 312px;
+        height: 468px;
+        margin-top: 0;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        top: -924px;
+        right: 0;
+        z-index: 1;
+        bottom: 0;
+        left: 1030px;
+    }
+    .intro-section {
+        width: 1015px;
+        height: 332px;
+        margin: auto;
+        text-align: left;
+        margin-bottom: 25em;
+        margin-left: 0;
+        margin-right: 6em;
+        padding-top: 2em;
+    }
+    header .logo {
+        padding-left: 0.9em;
+        padding-top: 0.3em;
+    }
+    .main-heading {
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -1px;
+        margin-bottom: 30px;
+    }
+    .main-paragraph {
+        font-size: 20px;
+        line-height: 34px;
+        padding-right: 7.5em;
+    }
+    .center-section {
+        width: 1110px;
+        height: 775px;
+    }
+    .bg-pattern-2 {
+        width: 1110px;
+        height: 600px;
+        border-radius: 0.5em;
+    }
+    .center-info-container {
+        width: 446px;
+        height: 625px;
+        position: relative;
+        bottom: 513px;
+        border-radius: 0.5em;
+        text-align: left;
+        padding: 3em;
+        padding-left: 4.5em;
+        left: 580px;
+    }
+    .center-paragraph {
+        padding-right: 1em;
+    }
+    .mobile-app img {
+        width: 312px;
+        height: 642px;
+        bottom: 211px;
+        right: 295px;
+    }
+    .bg-pattern-2 img {
+        width: 312px;
+        height: 468px;
+    }
+    footer {
+        padding: 1.5em;
+        width: 1110px;
+        height: 79px;
+        padding-right: 18em;
+        padding-left: 0;
+        margin-bottom: 6em;
+    }
+    .footer-info {
+        position: relative;
+        left: 6em;
+        bottom: 2em;
+        padding: 0 13em;
+    }
+    .social-icons {
+        justify-content: flex-end;
+        position: relative;
+        left: 289px;
+        bottom: 131px;
+    }
+    .footer-logo {
+        width: 146.09px;
+        height: 32px;
+        position: relative;
+        top: 36px;
+    }
+}
