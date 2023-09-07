@@ -214,7 +214,8 @@ footer {
     cursor: pointer;
 }
 .social-icons img:hover {
-    background-color: var(--andriod-btn-hover);
+  filter: invert(69%) sepia(38%) saturate(5833%) hue-rotate(327deg)
+    brightness(102%) contrast(96%);
 }
 
 /* TABLET VERSION */
